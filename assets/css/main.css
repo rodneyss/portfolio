@@ -1,4 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://fonts.googleapis.com/css?family=Poiret+One|PT+Sans+Narrow|Lobster);
+
+@font-face {
+  font-family: Darleston;
+  src:  url('Darleston.otf');
+       
+}
+
 *{
   color: white;
 }
@@ -11,9 +18,9 @@ nav{
   top:0;
   left:0;
   width: 100%;
-  height: 10%;
+  height: 60px;
   z-index: 99999;
-  background: black;
+  background: #252044;
 }
 
 #myMenu{
@@ -22,13 +29,69 @@ nav{
   padding-right: 2%;
 }
 
+a:hover{
+  color: #19B5FE;
+  cursor: pointer;
+}
+
+.about:hover{
+  color: #19B5FE;
+}
+
 li{
   display: inline-block;
   margin: 10px;
 }
 
-/***************** nav **********************/
+a:link:active, a:visited:active { 
+    border: 0;
+}
 
+li:hover{
+   color: #19B5FE;
+  cursor: pointer;
+}
+
+#name{
+  font-family: Darleston, sans-serif;
+  position: absolute;
+  font-size: 1.5em;
+  top: 5px;
+  left: 10px;
+  text-align: center;
+  line-height: 50px;
+/*  height: 50px;
+  width: 50px;*/
+  border-radius: 20%;
+}
+
+.nameDown{
+  /*border: 1px solid black;*/
+  color: black;
+}
+
+.nameTop{
+  /*border: 1px solid white;*/
+  color: white;
+}
+
+#name:hover{
+  cursor: pointer;
+  color: #19B5FE;
+
+}
+
+/*.nameTop:hover{
+  
+  color: #19B5FE;
+}
+
+.nameDown:hover{
+  
+  color: #19B5FE;
+}*/
+
+/***************** nav **********************/
 
 body{
   margin: 0;
@@ -40,12 +103,21 @@ canvas{
   top:0;
   margin-top: 10%;
   max-width: 100%;
-  z-index: -99999;
+  z-index: -999;
 }
 
 p{
   max-width: 50%;
   margin-left: 25%;
+  font-family: "Helvetica Neue", helvetica, sans-serif
+}
+
+
+
+.mySection{
+  /*background: #C6D4DF;*/
+  background:#252044;
+  z-index: -9999;
 }
 
 
@@ -78,6 +150,7 @@ p{
 }
 
 #head .story{
+  font-family: "Lobster";
   font-size: 2em;
   text-align: center;
   position: relative;
@@ -87,6 +160,7 @@ p{
 
 #about h2{
   margin-top: 20%;
+  font-family: "Lobster";
 }
 
 h3{
@@ -110,9 +184,6 @@ img{
   height: auto;
 }
 
-hr{
-  color: white;
-}
 
 .picture{
   max-width: 100%;

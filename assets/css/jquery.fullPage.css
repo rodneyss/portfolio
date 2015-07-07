@@ -192,8 +192,8 @@ html.fp-enabled,
 #fp-nav.fp-show-active a.active + .fp-tooltip {
     -webkit-transition: opacity 0.2s ease-in;
     transition: opacity 0.2s ease-in;
-    width: auto;
-    opacity: 1;
+    /*width: auto;*/
+    /*opacity: 1;*/
 }
 #fp-nav ul li .fp-tooltip.right {
     right: 20px;

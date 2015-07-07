@@ -76,7 +76,7 @@ app.beans = function() {
         cursors = game.input.keyboard.createCursorKeys();
         fireButton = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
 
-        game.stage.backgroundColor = '#000000';
+        game.stage.backgroundColor = '#252044';
 
         //Cpu controlls character if no input after 4 seconds
         setTimeout(function() {
@@ -318,15 +318,18 @@ app.beans = function() {
 var menuBlackBg = function(){
     $('nav').hide('blind', 500, function(){
         $('ul.nav li').css({"color": "white"});
-        $('nav').css({"background": "black"}).show('drop', 500);
+        $('nav').css({"background": "#252044"}).show('drop', 500);
         $('#myMenu a').animate({"color": "white"}, 1000);
+        $('#name').removeClass("nameDown").addClass("nameTop");
     });
 }
 
 var menuWhiteBg = function(){
         $('nav').hide().css({"background": "white"}).show(
             'blind', 500, function(){
-                $('#myMenu a').animate({"color": "black"}, 1000);
+                $('#myMenu a').css({"color": "black"});
+                $('#name').removeClass("nameTop").addClass("nameDown");
+
             });
         
 }
@@ -342,7 +345,7 @@ var pageDisplay = {
     },
     showP: function(page){
         $(page).show().textillate({ in : {
-            effect: 'bounceInDown',
+            effect: 'bounceIn',
             shuffle: true,
             delay: 10
         }});
@@ -361,7 +364,7 @@ $(document).ready(function() {
 
     $('#fullpage').fullpage({
         anchors: ['firstPage', 'secondPage', 'thirdPage'],
-        menu: '#myMenu',
+        // menu: '#myMenu',
         sectionSelector: '.mySection',
         keyboardScrolling: true,
         afterLoad: function(anchorLink, index){

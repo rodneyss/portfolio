@@ -1,251 +1,265 @@
 @import url(https://fonts.googleapis.com/css?family=Poiret+One|PT+Sans+Narrow|Lobster);
+canvas,
+nav {
+    position: absolute;
+    top: 0
+}
+
+.mySection,
+nav {
+    background: #252044
+}
+
+#bean,
+#myMenu,
+#name,
+canvas,
+nav {
+    position: absolute
+}
+
+#head .story,
+#web {
+    text-shadow: 1px 1px 2px rgba(153, 150, 150, 1)
+}
+
+a:hover,
+h3 {
+    text-decoration: underline
+}
+
+.group:after,
+.section {
+    clear: both
+}
 
 @font-face {
-  font-family: Darleston;
-  src:  url('Darleston.otf');
-       
+    font-family: Darleston;
+    src: url(Darleston.otf)
 }
 
-canvas{
-  position: absolute;
-  top:0;
-  margin-top: 10%;
-  max-width: 100%;
-  z-index: -999;
+canvas {
+    margin-top: 10%;
+    max-width: 100%;
+    z-index: -999
 }
 
-
-*{
-  color: white;
+* {
+    color: #fff
 }
 
-
-/***************** nav **********************/
-
-#navdefault{
-  position: absolute;
-  top:0;
-  left:0;
-  width: 100%;
-  height: 60px;
-  z-index: 99999;
-  background: #252044;
+nav {
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 99999
 }
 
-#myMenu{
-  position: absolute;
-  right: 0;
-  padding-right: 2%;
+#myMenu {
+    right: 0;
+    padding-right: 2%
 }
 
-a:hover{
-  color: #19B5FE;
-  cursor: pointer;
+a:hover {
+    color: #19B5FE;
+    cursor: pointer
 }
 
-li{
-  display: inline-block;
-  margin: 10px;
+li {
+    display: inline-block;
+    margin: 10px
 }
 
-a:-webkit-any-link{
-    text-decoration: none;
-}
-
-a:hover{
-    text-decoration: underline;
+a:-webkit-any-link {
+    text-decoration: none
 }
 
 a:focus {
-  outline:0;
+    outline: 0
 }
 
-#name{
-  font-family: Darleston, sans-serif;
-  position: absolute;
-  font-size: 1.5em;
-  top: 5px;
-  left: 10px;
-  text-align: center;
-  line-height: 50px;
+#name {
+    font-family: Darleston, sans-serif;
+    font-size: 1.5em;
+    top: 5px;
+    left: 10px;
+    text-align: center;
+    line-height: 50px
 }
 
-.nameDown{
-  
-  color: black;
+.nameDown {
+    color: #000
 }
 
-.nameTop{
- 
-  color: white;
+.nameTop {
+    color: #fff
 }
 
-#name:hover{
-  cursor: pointer;
-  color: #19B5FE;
-
+#name:hover {
+    cursor: pointer;
+    color: #19B5FE
 }
 
-
-
-
-
-
-/***************** nav **********************/
-
-body{
-  margin: 0;
-  background-color: #252044;
+body {
+    margin: 0;
+    background-color: #252044
 }
 
-
-
-p{
-  max-width: 50%;
-  margin-left: 25%;
-  font-family: "Helvetica Neue", helvetica, sans-serif;
+p {
+    max-width: 50%;
+    margin-left: 25%;
+    font-family: "Helvetica Neue", helvetica, sans-serif
 }
 
-.mySection{
-  background:#252044;
-  z-index: -9999;
+.mySection {
+    z-index: -9999
 }
 
-#testme{
-  width: 200px;
-  height: 200px;
-  background: red;
+#testme {
+    width: 200px;
+    height: 200px;
+    background: red
 }
 
-
-#bean{
-  position: absolute;
-  width: 100%;
-  top:0;
-  left:0;
-  z-index: -10;
-  background:#252044 ;
-}
-
-.showTime{
-  opacity: 0;
-}
-
-#web{
-  margin-top: 0;
-  font-family: 'Poiret One', cursive;
-  font-size: 4em;
-  text-align: center;
-  text-shadow: 1px 1px 2px rgba(153, 150, 150, 1);
-}
-
-#title{
-  position:relative;
-  text-align: center;
-}
-
-#head{
-  margin-top:10%;
-}
-
-#about h2{
-  margin-top: 20%;
-  font-family: Darleston;
-}
-
-#head .story{
-  font-family: 'Poiret One';
-  font-size: 2em;
-  text-align: center;
-  position: relative;
-  top: 0;
-  text-shadow: 1px 1px 2px rgba(153, 150, 150, 1);
-}
-
-.skills{
-  font-size: 11px;
-  font-family: Times;
-}
-
-
-
-h3{
-  margin-top: 21%;
-  text-align: center;
-  text-decoration: underline;
-
-  /*background-color: #ffff00;*/
-}
-
-
-#about{
-  text-align: center;
-  margin-bottom: 100px;
-  max-width: 40%;
-  margin-left: 30%;
-}
-
-img{
-  max-width: 90%;
-  height: auto;
-  margin-left: 5%;
-}
-
-#contact{
-
-  text-align: center;
-}
-
-#contact h3{
-    margin-top:5%;
-  }
-
-
-.picture{
-  max-width: 100%;
-  height: auto;
-}
-
-/*  SECTIONS  */
-.section {
-  clear: both;
-  padding: 0px;
-  margin: 0px;
-}
-
-/*  COLUMN SETUP  */
-.col {
-  display: block;
-  float:left;
-  margin: 0;
-}
-.col:first-child { margin-left: 0.8%; }
-
-/*  GROUPING  */
-.group:before,
-.group:after { content:""; display:table; }
-.group:after { clear:both;}
-.group { zoom:1; /* For IE 6/7 */ }
-/*  GRID OF TWO  */
+#bean,
 .span_2_of_2 {
-  width: 100%;
-}
-.span_1_of_2 {
-  width: 49.2%;
+    width: 100%
 }
 
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+#bean {
+    top: 0;
+    left: 0;
+    z-index: -10;
+    background: #252044
+}
 
-@media only screen and (max-width: 600px) {
-  .col { 
-    margin: 1% 0 1% 0%;
-  }
-  .col:first-child { margin-left: 0; }
-  h2.story{
+#head .story,
+#title {
+    text-align: center;
+    position: relative
+}
+
+.showTime {
+    opacity: 0
+}
+
+#web {
+    margin-top: 0;
+    font-family: 'Poiret One', cursive;
+    font-size: 4em;
+    text-align: center
+}
+
+#head {
+    margin-top: 10%
+}
+
+#about h2 {
     margin-top: 20%;
-  }
+    font-family: Darleston
 }
 
-@media only screen and (max-width: 600px) {
-  .span_2_of_2, .span_1_of_2 { width: 100%; }
+#head .story {
+    font-family: 'Poiret One';
+    font-size: 2em;
+    top: 0
+}
+
+.skills {
+    font-size: 11px;
+    font-family: Times
+}
+
+h3 {
+    margin-top: 21%;
+    text-align: center
+}
+
+#about {
+    text-align: center;
+    margin-bottom: 100px;
+    max-width: 40%;
+    margin-left: 30%
+}
+
+img {
+    max-width: 90%;
+    height: auto;
+    margin-left: 5%
+}
+
+#contact {
+    text-align: center;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+}
+
+.contactBack{
+    background: url("../images/sydneysky.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h3.contactEnd {
+    margin-top: 22%;
+}
+#contact h3:last-of-type {
+    margin-top: 5%;
+}
+#contact h3,p{
+      text-shadow: 1px 1px 2px rgba(19, 9, 9, 1);
+}
+
+.picture {
+    max-width: 100%;
+    height: auto
+}
+
+.section {
+    padding: 0;
+    margin: 0
+}
+
+.col {
+    display: block;
+    float: left;
+    margin: 0
+}
+
+.col:first-child {
+    margin-left: .8%
+}
+
+.group:after,
+.group:before {
+    content: "";
+    display: table
+}
+
+.group {
+    zoom: 1
+}
+
+.span_1_of_2 {
+    width: 49.2%;
+}
+
+.toolSet{
+    text-align: center;
+}
+
+@media only screen and (max-width:600px) {
+    .col {
+        margin: 1% 0
+    }
+    .col:first-child {
+        margin-left: 0
+    }
+    h2.story {
+        margin-top: 20%
+    }
+    .span_1_of_2,
+    .span_2_of_2 {
+        width: 100%
+    }
 }

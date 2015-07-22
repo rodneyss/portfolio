@@ -32,6 +32,7 @@ app.beans = function() {
 
 
     function preload() {
+        game.stage.backgroundColor = '#252044';
         game.load.image('particle', 'assets/images/particle.png');
         game.load.image('ground', 'assets/images/blackbg.png');
         game.load.image('ruby', 'assets/images/ruby-rails-128.png');
@@ -44,6 +45,7 @@ app.beans = function() {
     }
 
     function create() {
+        
 
         game.physics.startSystem(Phaser.Physics.ARCADE);
         player = game.add.sprite(game.world.width - 40, 0, 'me');
@@ -76,7 +78,7 @@ app.beans = function() {
         cursors = game.input.keyboard.createCursorKeys();
         fireButton = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
 
-        game.stage.backgroundColor = '#252044';
+        
 
         //Cpu controlls character if no input after 4 seconds
         setTimeout(function() {
@@ -343,6 +345,14 @@ var pageDisplay = {
             this.showP('#claw p');
             this.showH('#claw h3');
     },
+    work: function(){
+            this.showP('#work p');
+            this.showH('#work h3');
+    },
+    fighter: function(){
+            this.showP('#fighter p');
+            this.showH('#fighter h3');
+    },
     showP: function(page){
         $(page).show().textillate({ in : {
             effect: 'bounceIn',
@@ -374,11 +384,17 @@ $(document).ready(function() {
             // }
             //using anchorLink
             if(anchorLink == 'secondPage'){
-                pageDisplay.dragon();
+                pageDisplay.work();
             }
 
             if(anchorLink == 'thirdPage'){
                 pageDisplay.claw();
+            }
+            if(anchorLink == 'fourthPage'){
+                pageDisplay.dragon();
+            }
+            if(anchorLink == 'fifthPage'){
+                pageDisplay.fighter();
             }
         },
         onLeave: function(index, nextIndex, direction){

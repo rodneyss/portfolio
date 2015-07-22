@@ -18,34 +18,31 @@
 </head>
 
 <body>
-    <nav style="display:none" class="navDefault">
+    <nav style="display:none">
     <!-- <div id="home"></div> -->
 
-    <div id="name" class="nameTop">Rodney Sue-San</div>
+    <a href="#firstPage"><div id="name" class="nameTop">RSS</div></a>
 
     <ul id="myMenu" class="nav">
-<!--         <li data-menuanchor="firstPage" class="active about">
-            <a href="#firstPage">about</a>
-        </li>
-
-        <li data-menuanchor="secondPage" class="projects">
-            <a href="#secondPage">projects</a>
-        </li>
-
-        <li data-menuanchor="thirdPage" class="contact">
-            <a href="#thirdPage">contact</a>
-        </li> -->
 
         <li class="active about">
             <a href="#firstPage">about</a>
         </li>
 
         <li class="projects">
+            |
+        </li>
+
+        <li class="projects">
             <a href="#secondPage">projects</a>
         </li>
 
+          <li class="projects">
+            |
+        </li>
+
         <li class="contact">
-            <a href="#thirdPage">contact</a>
+            <a href="#sixthPage">contact</a>
         </li>
     </ul>
 
@@ -65,11 +62,17 @@
                 </div>
 
                 <div id="about" class="showTime">
-                    <h2>Journey to becoming a web developer</h2>
-                    <span>Something awesome about awesome stuff, buzz word, another buzz word, more buzz word, hip, innovative consectetur adipisicing elit. Molestias eius alias pariatur distinctio voluptatem odio voluptate omnis reiciendis maiores commodi, ad consectetur aspernatur, eum autem quasi quo quidem eaque aliquam.</span>
+                    <h2>  “From tech, to horses, back to tech”</h2>
+                    <span>Passionate about technology and electronics. Dismantler of objects. Repairer of iPhones and Android phones.Wannabe game developer with Unreal Engine 4.</span>
+                    <br>
+                    <br>
+                    <div>Recently  undertook the <b>Web</b> Development Immersive course at  General Assembly. I've always had an interest in <b>technology</b> and the internet. The web has omnipresence and it makes sense that it grows and fully engages  with technology. My aim really, is to make some cool shit that people will use and talk about.</div>
+                    <br>
+                    <span class="skills">HTML | Javascript | jQuery | Ruby/Rails | CSS | Backbone | Phaser | Git Hub</span>
                 </div>
             </div>
         </div>
+
 
     </div>
 
@@ -79,14 +82,14 @@
     
     <div class="mySection" data-anchor="secondPage">
 
-        <div id="dragon" class="section group">
+        <div id="work" class="section group">
             <div class="col span_1_of_2">
-                <h3 style="opacity: 0">dragon Turf</h3>
-                <p style="display:none">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae dolorum eum eveniet, numquam et. Enim nostrum, aspernatur nulla a aperiam quae, qui sapiente est quidem voluptates ipsum doloribus quia nobis!
+                <h3 style="opacity: 0">Work Track</h3>
+                <p style="display:none">Optimized for mobile devices. Running a small buisness? got employees running around doing hourly based jobs? Work track keeps everything up to date and on time. Track start and stop times, and who worked where. Weekly accumalated hours for each employee. Who needs to be paid and which clients have outstanding accounts.
                 </p>
             </div>
             <div class="col span_1_of_2">
-                <img src="assets/images/sydney.png" alt="">
+                <a href="worktrack22.herokuapp.com"><img src="assets/images/worktrack.png" alt=""></a>
             </div>
         </div>
 
@@ -97,14 +100,75 @@
 
         <div id="claw" class="section group">
             <div class="col span_1_of_2">
-                <img src="assets/images/sydney.png" alt="">
+                <a href="http://clawofnoms.herokuapp.com"><img src="assets/images/claw.png" alt=""></a>
             </div>
 
             <div class="col span_1_of_2">
                 <h3 style="opacity: 0">Claw of Noms</h3>
-                <p style="display:none">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae dolorum eum eveniet, numquam et. Enim nostrum, aspernatur nulla a aperiam quae, qui sapiente est quidem voluptates ipsum doloribus quia nobis!
+                <p style="display:none">Choose from a selection of games available upon login notch up scores in order to gain coins which are given out at 2 hour intervals if the user is in the top 5 for a particular game. once the user obtains a coin, they can try their luck at the CLAW which selects a random voucher to redeem a prize.
                 </p>
             </div>
+        </div>
+
+    </div>
+
+
+    
+    <div class="mySection" data-anchor="fourthPage">
+
+        <div id="dragon" class="section group">
+            <div class="col span_1_of_2">
+                <h3 style="opacity: 0">dragon Turf</h3>
+                <p style="display:none">Geolocation game where certain geo-points have monsters that you can attack. Has a dynamic creation of monsters that spawn within 1km of player. Kill monsters, level up, and collect loot. Become number one in your area.
+                </p>
+            </div>
+            <div class="col span_1_of_2">
+                <a href="http://dragon-turf.herokuapp.com/"><img src="assets/images/dragon.png" alt=""></a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="mySection" data-anchor="fifthPage">
+
+        <div id="fighter" class="section group">
+            <div class="col span_1_of_2">
+                <a href="http://rodneyss.github.io/project_0/"><img src="assets/images/ticktac.png" alt=""></a>
+            </div>
+
+            <div class="col span_1_of_2">
+                <h3 style="opacity: 0">OX's street fighter style</h3>
+                <p style="display:none">Ryu and Chun-li wish to do battle with their minds. Assist them! Play against a friend or against the computer.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="mySection" data-anchor="sixthPage">
+
+        <div id="contact" class="section group">
+<!--             <div class="col span_1_of_2">
+               <p>How to get in contact</p>
+            </div>
+
+            <div class="col span_1_of_2">
+                <h3>Email</h3>
+                <p>write2rs@hotmail.com</p>
+
+                <h3>Phone</h3>
+                <p>0415799262</p>
+            </div> -->
+
+                <h3>Email</h3>
+                <p>write2rs@hotmail.com</p>
+
+                <h3>Phone</h3>
+                <p>0415799262</p>
+
+
         </div>
 
     </div>

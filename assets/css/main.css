@@ -6,6 +6,15 @@
        
 }
 
+canvas{
+  position: absolute;
+  top:0;
+  margin-top: 10%;
+  max-width: 100%;
+  z-index: -999;
+}
+
+
 *{
   color: white;
 }
@@ -34,22 +43,21 @@ a:hover{
   cursor: pointer;
 }
 
-.about:hover{
-  color: #19B5FE;
-}
-
 li{
   display: inline-block;
   margin: 10px;
 }
 
-a:link:active, a:visited:active { 
-    border: 0;
+a:-webkit-any-link{
+    text-decoration: none;
 }
 
-li:hover{
-   color: #19B5FE;
-  cursor: pointer;
+a:hover{
+    text-decoration: underline;
+}
+
+a:focus {
+  outline:0;
 }
 
 #name{
@@ -60,18 +68,15 @@ li:hover{
   left: 10px;
   text-align: center;
   line-height: 50px;
-/*  height: 50px;
-  width: 50px;*/
-  border-radius: 20%;
 }
 
 .nameDown{
-  /*border: 1px solid black;*/
+  
   color: black;
 }
 
 .nameTop{
-  /*border: 1px solid white;*/
+ 
   color: white;
 }
 
@@ -81,51 +86,45 @@ li:hover{
 
 }
 
-/*.nameTop:hover{
-  
-  color: #19B5FE;
-}
 
-.nameDown:hover{
-  
-  color: #19B5FE;
-}*/
+
+
+
 
 /***************** nav **********************/
 
 body{
   margin: 0;
-  background-color: black;
+  background-color: #252044;
 }
 
-canvas{
-  position: absolute;
-  top:0;
-  margin-top: 10%;
-  max-width: 100%;
-  z-index: -999;
-}
+
 
 p{
   max-width: 50%;
   margin-left: 25%;
-  font-family: "Helvetica Neue", helvetica, sans-serif
+  font-family: "Helvetica Neue", helvetica, sans-serif;
 }
 
-
-
 .mySection{
-  /*background: #C6D4DF;*/
   background:#252044;
   z-index: -9999;
+}
+
+#testme{
+  width: 200px;
+  height: 200px;
+  background: red;
 }
 
 
 #bean{
   position: absolute;
+  width: 100%;
   top:0;
   left:0;
-  z-index: -10
+  z-index: -10;
+  background:#252044 ;
 }
 
 .showTime{
@@ -149,8 +148,13 @@ p{
   margin-top:10%;
 }
 
+#about h2{
+  margin-top: 20%;
+  font-family: Darleston;
+}
+
 #head .story{
-  font-family: "Lobster";
+  font-family: 'Poiret One';
   font-size: 2em;
   text-align: center;
   position: relative;
@@ -158,10 +162,12 @@ p{
   text-shadow: 1px 1px 2px rgba(153, 150, 150, 1);
 }
 
-#about h2{
-  margin-top: 20%;
-  font-family: "Lobster";
+.skills{
+  font-size: 11px;
+  font-family: Times;
 }
+
+
 
 h3{
   margin-top: 21%;
@@ -180,9 +186,19 @@ h3{
 }
 
 img{
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
+  margin-left: 5%;
 }
+
+#contact{
+
+  text-align: center;
+}
+
+#contact h3{
+    margin-top:5%;
+  }
 
 
 .picture{

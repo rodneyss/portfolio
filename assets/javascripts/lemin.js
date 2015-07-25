@@ -355,10 +355,11 @@ var pageDisplay = {
     },
     showP: function(page){
         $(page).show().textillate({ in : {
-            effect: 'bounceIn',
-            shuffle: true,
+            effect: 'fadeInDown',
+            sync: true,
             delay: 10
         }});
+        
     },
     showH: function(head){
         $(head).animate({"opacity": "1"}, 1000);

@@ -12,12 +12,14 @@ app.beans = function() {
     var collect = 0;
     var player;
     var skills;
+    var kb;
     var ground;
     var beanFall;
     var emitter;
     var cursors;
     var cpuRun = false;
     var collectAll = false;
+    var kbInstruct = false;
     var cpuTimer;
     var w = window.innerWidth;
     var icons = ['git', 'ruby', 'js', 'css', 'html'];
@@ -40,6 +42,7 @@ app.beans = function() {
         game.load.image('git', 'assets/images/github-128.png');
         game.load.image('css', 'assets/images/css-128.png');
         game.load.image('html', 'assets/images/html.png');
+        game.load.image('kb', 'assets/images/kb2.png')
         game.load.spritesheet('me', 'assets/images/dude.png', 32, 48);
 
     }
@@ -64,6 +67,9 @@ app.beans = function() {
 
         skills = game.add.group();
         skills.enableBody = true;
+
+        kb = game.add.group();
+        kb.enableBody = true;
 
         emitter = game.add.emitter(0,0, 50);
         emitter.makeParticles('particle');
@@ -179,8 +185,9 @@ app.beans = function() {
     }
 
     function cpuOff() {
-        if (cpuRun) {
+        if (cpuRun || kbInstruct) {
             cpuRun = false;
+            kbInstruct = false;
         }
     }
 
@@ -198,6 +205,7 @@ app.beans = function() {
                 if (player.x >= game.world.width / 2) {
 
                     cpuRun = false;
+                    kbInstruct = true;
                     stageTwo();
                 }
             } else {
@@ -303,10 +311,21 @@ app.beans = function() {
             $('#head .story').html('Rodney Sue-San').animate({
                 opacity: 1
             }, 1000, function() {
+                if(kbInstruct){kbBlink()};
                 showStuff();
             });
         });
     }
+
+    function kbBlink() {
+        if(kbInstruct){
+                kb = game.add.sprite(player.x+10, player.y-30, 'kb');
+                kb.scale.setTo(.5, .5);
+                
+            setTimeout(function(){kb.destroy()},500);  
+            setTimeout(kbBlink,1000);
+        };
+    };
 
 };
 

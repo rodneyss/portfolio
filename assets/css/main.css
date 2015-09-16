@@ -1,8 +1,12 @@
-@import url(https://fonts.googleapis.com/css?family=Poiret+One|PT+Sans+Narrow|Lobster);
+@import url(https://fonts.googleapis.com/css?family=Poiret+One|PT+Sans+Narrow|Roboto);
 canvas,
 nav {
     position: absolute;
     top: 0
+}
+
+* {
+    font-family: Roboto
 }
 
 .mySection,
@@ -20,6 +24,9 @@ nav {
 
 
 /***************** nav **********************/
+a:-webkit-any-link {
+    text-decoration: none
+}
 
 nav{
   position: absolute;
@@ -34,11 +41,6 @@ nav{
 #web {
     text-shadow: 1px 1px 2px rgba(153, 150, 150, 1)
 
-}
-
-a:hover,
-h3 {
-    text-decoration: underline
 }
 
 .group:after,
@@ -75,7 +77,8 @@ nav {
 
 a:hover {
     color: #19B5FE;
-    cursor: pointer
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 li {
@@ -83,15 +86,12 @@ li {
     margin: 10px
 }
 
-a:-webkit-any-link {
-    text-decoration: none
-}
 
 a:focus {
     outline: 0
 }
 
-#name {
+#name{
     font-family: Darleston, sans-serif;
     font-size: 1.5em;
     top: 5px;
@@ -152,24 +152,32 @@ p {
     position: relative
 }
 
+.story span{
+    font-family: 'Poiret One';
+}
+
 .showTime {
     opacity: 0
 }
 
-#web {
+#web{
     margin-top: 0;
     font-family: 'Poiret One', cursive;
     font-size: 4em;
     text-align: center
 }
 
-#head {
+#web span{
+    font-family: 'Poiret One', cursive;
+}
+
+#head{
     margin-top: 10%
 }
 
-#about h2 {
+#about h4 {
     margin-top: 20%;
-    font-family: Darleston
+    font-family: Roboto;
 }
 
 #head .story {
@@ -180,7 +188,6 @@ p {
 
 .skills {
     font-size: 11px;
-    font-family: Times
 }
 
 h3 {
@@ -188,17 +195,27 @@ h3 {
     text-align: center
 }
 
-#about {
-    text-align: center;
-    margin-bottom: 100px;
+#about div{
+    /*margin-bottom: 100px;*/
+    max-height:50%;
     max-width: 40%;
-    margin-left: 30%
+    margin-left: 30%;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.showTime div{
+    margin-bottom: 22px;
 }
 
 img {
     max-width: 90%;
     height: auto;
     margin-left: 5%
+}
+
+img#ga{
+    margin-top: 20%;
 }
 
 #contact {
